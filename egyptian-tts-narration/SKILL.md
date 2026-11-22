@@ -45,7 +45,7 @@ Report the credit cost of **every** generation, including tiny tests.
 | Qaf → hamza (colloquial) | قاعد→آعِد · فوق→فوء / فوؤ · بيقرا→بيِئْرا · بيقراه→بيِئْراه · قال→آل · قعد→أعد · قبله→أبله · يلقط→يِلْؤُطْ · بيلقط→بيِلْؤُطْ · طريقة→طريأة · يقرّب→يِأرّب |
 | Keep ق (Standard-Arabic origin) | اقتراح / يقترح / الاقتراحات · قاموس · قماش→قُماش · مقالات · ترقية / اترقّى · مقنع→مُقنِع · القطعة · توقّع · قرارات · ينقل→يِنقِل |
 | Write as is (model says it right) | أقولها · حقايق · ووافقه→و وافقه (separate the و with a space; joined it came out with a gap) — respelling them (أؤولها، حآيِء) broke them. Try the plain spelling first for common colloquial words |
-| More approved spellings | لقط (past)→لَأَطْ · يبقى→يِبْأى · تعلى→تِعْلى · قصيرة→الأُصيّرة · طلعت (it turned out)→طِلْعِت · طلع / فطلع (came out)→طِلِع / فطِلِع · بتسأله, الحقيقة→plain |
+| More approved spellings | لقط (past)→لَأَطْ · يبقى→يِبْأى · تعلى→تِعْلى · قصيرة→الأُصيّرة · طلعت (it turned out)→طِلْعِت, but when the subject is a feminine noun from the previous sentence («…حتة من الرد. طلعت زي أي كلمة») plain طلعت worked and طِلْعِت was read as «I came out» · طلع / فطلع (came out)→طِلِع / فطِلِع · بتسأله, الحقيقة→plain |
 | Keep ث | ثواني · واثق |
 | Context-sensitive | شبه بعضه→شَبَه بعضه (similar) · تقل→تِئِلّ (becomes less, not ثقل; say it in «كل ما تِئِلّ،») · نصه→نُصّو (its half) · نص (text)→نَصّ vs نُصّ (half) · النصية→النَّصّية · وقف (imperative)→وَأَّفْ, with و: ووَأَّفْ · وقف (past)→وِئِف · رجع (past)→رِجِع · ما حفظش→ما حَفَظْش · بتدخله→بتدخّل له · يطلّع (transitive) vs يطلع (goes up) · تتغسل→تِتْغِسِل · تغسل (quoted)→«تُغسل» · أرجح كلام (noun: most likely)→الأرجح / الكلام الأرجح (without أل it is read as a verb; tashkeel didn't fix it) |
 | English letters | ChatGPT · Claude · Gemini · Large Language Model · Next Token Prediction · Token · Temperature |
@@ -145,6 +145,7 @@ Then update the review sheet's time ranges.
 - An adjective read as a verb: «أرجح كلام» was read as the verb. Tashkeel (أرْجَح، أَرْجَح، أرجَح) did not fix it; adding أل did (الأرجح، الكلام الأرجح).
 - Conjunction و glued to a word that starts with و: «ووافقه» came out with a gap. Write «و وافقه» with a space.
 - A pronoun suffix that keeps failing: split it off (بتدخّل له، إديته لها).
+- A word that is right in a short test can be read with the wrong subject inside a long segment (طلعت = she, read as I). Test it in the same preceding sentence, then regenerate the unapproved segment.
 
 **Generating**
 - Regenerating a whole segment to fix one word re-rolled other words («سامي» became «ساني»). Once approved, never regenerate.
