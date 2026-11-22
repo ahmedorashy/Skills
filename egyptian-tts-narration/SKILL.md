@@ -41,7 +41,7 @@ Report the credit cost of **every** generation, including tiny tests.
 | Keep ق (Standard-Arabic origin) | اقتراح / يقترح / الاقتراحات · قاموس · قماش→قُماش · مقالات · ترقية / اترقّى · مقنع→مُقنِع · القطعة · توقّع · قرارات · ينقل→يِنقِل |
 | Write as is (model says it right) | أقولها · حقايق · ووافقه→و وافقه (separate the و with a space; joined it came out with a gap) — respelling them (أؤولها، حآيِء) broke them. Try the plain spelling first for common colloquial words |
 | Keep ث | ثواني · واثق |
-| Context-sensitive | شبه بعضه→شَبَه بعضه (similar) · تقل→تِئِلّ (becomes less, not ثقل; say it in «كل ما تِئِلّ،») · نصه→نُصّو (its half) · نص (text)→نَصّ vs نُصّ (half) · النصية→النَّصّية · وقف (imperative)→وَأَّفْ, with و: ووَأَّفْ · وقف (past)→وِئِف · رجع (past)→رِجِع · ما حفظش→ما حَفَظْش · بتدخله→بتدخّل له · يطلّع (transitive) vs يطلع (goes up) · تتغسل→تِتْغِسِل · تغسل (quoted)→«تُغسل» |
+| Context-sensitive | شبه بعضه→شَبَه بعضه (similar) · تقل→تِئِلّ (becomes less, not ثقل; say it in «كل ما تِئِلّ،») · نصه→نُصّو (its half) · نص (text)→نَصّ vs نُصّ (half) · النصية→النَّصّية · وقف (imperative)→وَأَّفْ, with و: ووَأَّفْ · وقف (past)→وِئِف · رجع (past)→رِجِع · ما حفظش→ما حَفَظْش · بتدخله→بتدخّل له · يطلّع (transitive) vs يطلع (goes up) · تتغسل→تِتْغِسِل · تغسل (quoted)→«تُغسل» · أرجح كلام (noun: most likely)→الأرجح / الكلام الأرجح (without أل it is read as a verb; tashkeel didn't fix it) |
 | English letters | ChatGPT · Claude · Gemini · Large Language Model · Next Token Prediction · Token · Temperature |
 
 Shadda on doubled verbs helps: يجرّب، يدوّر، اتدرّب، يزوّد، يكرّر، اتغيّر، كمّل.
