@@ -28,7 +28,12 @@ Report the credit cost of **every** generation, including tiny tests.
 2. **No full tashkeel**: it pushes MSA. Add diacritics only to the one word that needs them (e.g. يِلْؤُطْ، تِتْغِسِل، نَصّ).
 3. **Qaf**: in purely colloquial words, write ق as the hamza that is actually said. Words of Standard-Arabic origin **keep ق**. Do not over-convert (the owner flagged this: "بتأفور في الصح لحد ما يبقى غلط").
 4. **Tha**: educated words keep ث (ثواني، واثق). تواني / واسِأ were wrong.
-5. **Context decides** vowels and meaning. Read and understand the sentence before respelling. Never respell mechanically.
+5. **Context decides: parse every sentence before writing it.** For each word that could be read two ways, decide from the sentence:
+   - Is it a noun, an adjective (أفعل تفضيل) or a verb? «أرجح كلام» is an adjective (most likely), not the verb أرجّح.
+   - For a verb: past, present or imperative? وقف imperative = وَأَّفْ, past = وِئِف; رجع past = رِجِع.
+   - Transitive or not? يطلّع (brings out) vs يطلع (goes up).
+   - Which meaning? تقل = becomes less (تِئِلّ), not ثقل (heavy); نص = text (نَصّ) vs half (نُصّ); شبه = similar (شَبَه).
+   Then choose the spelling (and diacritics only if needed) that forces that reading. If diacritics don't force it, change the form (add أل, split a suffix, add a space) and test. Never respell mechanically.
 6. **Tool and brand names in English letters** (ChatGPT, Claude, Gemini). Written in Arabic, ج is read as a Cairene g.
 7. If a pronoun suffix keeps coming out wrong, split it off: بتدخّل له.
 8. Some words only come out right in a **very short phrase**; inside a long sentence the model reverts (e.g. «كل ما تِئِلّ،»). Generate such a word in a short phrase.
