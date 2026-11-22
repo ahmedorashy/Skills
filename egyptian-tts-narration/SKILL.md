@@ -24,7 +24,7 @@ The owner's ear is the only judge. All rules below came from his listening revie
 Report the credit cost of **every** generation, including tiny tests.
 
 ## Spelling rules: write it the way it is said ("كما يُنطق")
-1. Arabic letters only, spelled the way a Cairene says the word. **No IPA**: the model read IPA `j` (ي) as ج, and IPA was unreliable overall. Old `/…/` lexicon entries are only a guide to the sound, never output.
+1. Arabic letters only, spelled the way a Cairene says the word. **No IPA**: IPA was the method up to episode 2 (about 40 words) and was dropped from episode 3 on, because it was unreliable (the model read `j` as ج). Old IPA lexicon entries only show the target sound; their Arabic-letter versions still need a test. ElevenLabs' docs recommend inline IPA for v4, but the owner's tests override that.
 2. **No full tashkeel**: it pushes MSA. Add diacritics only to the one word that needs them (e.g. يِلْؤُطْ، تِتْغِسِل، نَصّ).
 3. **Qaf**: in purely colloquial words, write ق as the hamza that is actually said. Words of Standard-Arabic origin **keep ق**. Do not over-convert (the owner flagged this: "بتأفور في الصح لحد ما يبقى غلط").
 4. **Tha**: educated words keep ث (ثواني، واثق). تواني / واسِأ were wrong.
@@ -45,18 +45,25 @@ Report the credit cost of **every** generation, including tiny tests.
 | Qaf → hamza (colloquial) | قاعد→آعِد · فوق→فوء / فوؤ · بيقرا→بيِئْرا · بيقراه→بيِئْراه · قال→آل · قعد→أعد · قبله→أبله · يلقط→يِلْؤُطْ · بيلقط→بيِلْؤُطْ · طريقة→طريأة · يقرّب→يِأرّب |
 | Keep ق (Standard-Arabic origin) | اقتراح / يقترح / الاقتراحات · قاموس · قماش→قُماش · مقالات · ترقية / اترقّى · مقنع→مُقنِع · القطعة · توقّع · قرارات · ينقل→يِنقِل |
 | Write as is (model says it right) | أقولها · حقايق · ووافقه→و وافقه (separate the و with a space; joined it came out with a gap) — respelling them (أؤولها، حآيِء) broke them. Try the plain spelling first for common colloquial words |
+| More approved spellings | لقط (past)→لَأَطْ · يبقى→يِبْأى · تعلى→تِعْلى · قصيرة→الأُصيّرة · طلعت (it turned out)→طِلْعِت · طلع / فطلع (came out)→طِلِع / فطِلِع · بتسأله, الحقيقة→plain |
 | Keep ث | ثواني · واثق |
 | Context-sensitive | شبه بعضه→شَبَه بعضه (similar) · تقل→تِئِلّ (becomes less, not ثقل; say it in «كل ما تِئِلّ،») · نصه→نُصّو (its half) · نص (text)→نَصّ vs نُصّ (half) · النصية→النَّصّية · وقف (imperative)→وَأَّفْ, with و: ووَأَّفْ · وقف (past)→وِئِف · رجع (past)→رِجِع · ما حفظش→ما حَفَظْش · بتدخله→بتدخّل له · يطلّع (transitive) vs يطلع (goes up) · تتغسل→تِتْغِسِل · تغسل (quoted)→«تُغسل» · أرجح كلام (noun: most likely)→الأرجح / الكلام الأرجح (without أل it is read as a verb; tashkeel didn't fix it) |
 | English letters | ChatGPT · Claude · Gemini · Large Language Model · Next Token Prediction · Token · Temperature |
 
-Shadda on doubled verbs helps: يجرّب، يدوّر، اتدرّب، يزوّد، يكرّر، اتغيّر، كمّل.
+Shadda on doubled letters helps (shadda is allowed; full tashkeel is not): يجرّب، يدوّر، اتدرّب، يزوّد، يكرّر، اتغيّر، كمّل، بيفرّق، يتوقّع، اتعلّمها، مرتّب، جوّاه، خلّي، يغيّر، يطلّعك، عليّا، يخمّن، يألّف، يلخّص، متدرّب، تتأكّد، يرنّ.
 
-**Lexicon.** `eps/lexicon.json` holds entries `{word, ctx, out, ok, ep, note}` and a `rules` list. Before writing a script, apply entries marked `ok: true` (Arabic spellings). Read each sentence first, because meaning decides. Every word the owner confirms goes into the lexicon right away with `ok: true`, its context and what failed.
+**Lexicon.** `eps/lexicon.json` holds entries `{word, ctx, out, ok, ep, note}` and a `rules` list. Before writing a script, apply entries marked `ok: true` (Arabic spellings). Read each sentence first, because meaning decides. Every word the owner confirms goes right away into three places: the lexicon (`ok: true`, context, what failed), this skill in his GitHub repo `ahmedorashy/Skills`, and his account skill (proposed as an edit for him to save).
 
 ## Script format
 - Start from the plain book text. Respell only what the rules require; leave every other word as written.
 - Put `[pause]` after each sentence inside a paragraph, and after a colon that introduces speech or a list («بيسأل نفسه: [pause] …»).
 - Separate paragraphs with a blank line; no `[pause]` at a paragraph's end.
+- Split attached لي/له/لها/لهم off verbs from the start, not only after a failure: ويختار لها، هيطلع لهم، بيكتب لي.
+- Drop tanween: فعلا، عموما (not فعلًا، عمومًا).
+- Numbers as Egyptian words (خمسمية وأربعين، عشرة في المية), never digits. Short English examples stay in Latin letters (hello world, API).
+- Keep the book's words. Offer a synonym only after spelling tests fail, and only the owner picks it (accepted before: الضهر→العصر، بالوش→بصمة الوش).
+- Captions are built from the book text plus a FIX list; every spoken change that alters the visible word (بتدخّل له، «تُغسل»، العصر) must go into that list so captions match the voice.
+- The source of truth for approved text is the segments JSON and the lexicon, not the `*_spoken.txt` drafts (those hold rejected over-converted spellings). Before regenerating or splicing, check the lexicon too: the JSON can lag behind it.
 - **Segments**: about 20–30 s each, made of **whole paragraphs**. Never cut a sentence across segments. Store as a JSON list of strings (`final_scripts/epN_segments.json`); audio files `01.mp3`, `02.mp3`…
 - Keep a review sheet with each segment's time range in the assembled episode so the owner can say "segment 8, the word تقل".
 
@@ -118,6 +125,14 @@ for i in 01 02 03 04 05 06 07 08 09 10 11 12; do
 ffmpeg -y -f concat -safe 0 -i list.txt -c:a libmp3lame -b:a 192k epN.mp3
 ```
 Then update the review sheet's time ranges.
+
+## What the tools can and can't do (checked Nov 2026, ElevenLabs docs)
+- In Flows, the eleven_v4 voiceover step only takes `language_code`, `stability` and `similarity`. Pronunciation dictionaries, `seed`, `previous_text`/`next_text` and character timestamps exist only on the website or the API.
+- `[pause]`, `[short pause]`, `[long pause]` are valid v4 tags. SSML and `<break>` are not supported on v4.
+- Pronunciation dictionaries (alias rules) can't stop random re-rolls like «سامي»→«ساني», can't handle context-sensitive words, and Arabic alias matching is untested. Don't rely on them without a test the owner approves.
+- `seed` is best effort only; it never replaces locking approved segments.
+- To find a word's exact second without guessing: ElevenLabs Scribe transcribes Egyptian Arabic with word timestamps (costs credits; ask first), or ask the owner for the second.
+- Another AI model was tried for full diacritization (Gemini) and as a narrator voice; both were dropped. Don't propose them again.
 
 ## Lessons learned (mistakes already made, do not repeat)
 **Spelling the script**
