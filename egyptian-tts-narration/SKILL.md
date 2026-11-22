@@ -114,6 +114,35 @@ ffmpeg -y -f concat -safe 0 -i list.txt -c:a libmp3lame -b:a 192k epN.mp3
 ```
 Then update the review sheet's time ranges.
 
+## Lessons learned (mistakes already made, do not repeat)
+**Spelling the script**
+- IPA in the prompt: the model read `j` as ج and mangled words. Arabic letters only.
+- Full tashkeel on the whole text, or forcing language `ar`: both pushed the voice to Modern Standard Arabic.
+- Over-converting ق to hamza: educated words broke (مقالات became «مآلات», يقترح became «يأترح»). Only purely colloquial words get the hamza.
+- Respelling common words that the model already says right: أؤولها came out «أاولها», حآيِء came out wrong. Write common colloquial words plainly first and respell only after the owner hears an error.
+- Turning ث into ت: «تواني», «واسأ» were wrong. Keep ث.
+- Respelling without reading the meaning: تقل (becomes less) was read as ثقل (heavy), شبه, نصه, وقف (imperative), رجع (past) all needed the sentence's meaning first.
+- An adjective read as a verb: «أرجح كلام» was read as the verb. Tashkeel (أرْجَح، أَرْجَح، أرجَح) did not fix it; adding أل did (الأرجح، الكلام الأرجح).
+- Conjunction و glued to a word that starts with و: «ووافقه» came out with a gap. Write «و وافقه» with a space.
+- A pronoun suffix that keeps failing: split it off (بتدخّل له، إديته لها).
+
+**Generating**
+- Regenerating a whole segment to fix one word re-rolled other words («سامي» became «ساني»). Once approved, never regenerate.
+- A word right in a short test went wrong again inside a long sentence (تِئِلّ). Keep such words in a short phrase.
+- Using a spelling different from the one the owner approved in the test. Use exactly the approved one.
+- Spending credits before knowing exactly which word and where. Ask first.
+
+**Splicing**
+- Cutting inside a word was audible (المقنع). Cut at silences; take a pause-bounded phrase if needed.
+- Splices that carried extra sounds from the neighbour word. Check the boundaries on the energy profile.
+- Guessing the word's position from the waveform in an unapproved segment: the old and new word both ended up in the audio. Regenerate the unapproved segment, or ask for the exact second.
+- Speeding up (atempo) or pitch-shifting the inserted word to match prosody: the owner rejected it as low quality. Accept a slightly shorter pause instead.
+- Sending a segment you already know still has a wrong word.
+
+**Working with the owner**
+- Changing anything he did not ask for.
+- Replying in English. Always Egyptian Arabic, short and practical.
+
 ## Never
 - Never use IPA in generated text, and never write full tashkeel.
 - Never force language `ar`.
