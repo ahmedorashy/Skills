@@ -45,6 +45,7 @@ Report the credit cost of **every** generation, including tiny tests.
 | Qaf → hamza (colloquial) | قاعد→آعِد · فوق→فوء / فوؤ · بيقرا→بيِئْرا · بيقراه→بيِئْراه · قال→آل · قعد→أعد · قبله→أبله · يلقط→يِلْؤُطْ · بيلقط→بيِلْؤُطْ · طريقة→طريأة · يقرّب→يِأرّب |
 | Keep ق (Standard-Arabic origin) | اقتراح / يقترح / الاقتراحات · قاموس · قماش→قُماش · مقالات · ترقية / اترقّى · مقنع→مُقنِع · القطعة · توقّع · قرارات · ينقل→يِنقِل |
 | Write as is (model says it right) | أقولها · حقايق · ووافقه→و وافقه (separate the و with a space; joined it came out with a gap) — respelling them (أؤولها، حآيِء) broke them. Try the plain spelling first for common colloquial words |
+| Episode 5 approved | قبل→وقَبل ما يقرا · اتقسمت (was divided)→اِتْقَسَمِت · قطعتين→plain · وقف past after ف→ف وِئِف · اتقصت (cut)→اتْأَصِّت · بيقرا→بيئرا · قالت له→قالتله · قايلة له→آيلالُه · وترجمها (imperative) |
 | More approved spellings | لقط (past)→لَأَطْ · يبقى→يِبْأى · تعلى→تِعْلى · قصيرة→الأُصيّرة · طلعت (it turned out)→طِلْعِت, but when the subject is a feminine noun from the previous sentence («…حتة من الرد. طلعت زي أي كلمة») plain طلعت worked and طِلْعِت was read as «I came out» · طلع / فطلع (came out)→طِلِع / فطِلِع · بتسأله, الحقيقة→plain |
 | Keep ث | ثواني · واثق |
 | Context-sensitive | شبه بعضه→شَبَه بعضه (similar) · تقل→تِئِلّ (becomes less, not ثقل; say it in «كل ما تِئِلّ،») · نصه→نُصّو (its half) · نص (text)→نَصّ vs نُصّ (half) · النصية→النَّصّية · وقف (imperative)→وَأَّفْ, with و: ووَأَّفْ · وقف (past)→وِئِف · رجع (past)→رِجِع · ما حفظش→ما حَفَظْش · بتدخله→بتدخّل له · يطلّع (transitive) vs يطلع (goes up) · تتغسل→تِتْغِسِل · تغسل (quoted)→«تُغسل» · آخر (last, as in آخر محطة)→آخِر (plain was read as آخَر "another") · أرجح كلام (noun: most likely)→الأرجح / الكلام الأرجح (without أل it is read as a verb; tashkeel didn't fix it) |
@@ -145,6 +146,10 @@ Then update the review sheet's time ranges.
 - An adjective read as a verb: «أرجح كلام» was read as the verb. Tashkeel (أرْجَح، أَرْجَح، أرجَح) did not fix it; adding أل did (الأرجح، الكلام الأرجح).
 - Conjunction و glued to a word that starts with و: «ووافقه» came out with a gap. Write «و وافقه» with a space.
 - A pronoun suffix that keeps failing: split it off (بتدخّل له، إديته لها).
+- A one-letter conjunction (و / ف) glued to a word starting with و gets a pause: write it apart (و وافقه، ف وِئِف).
+- A noun followed directly by another noun is read as إضافة (كلمة إنجليزي → «كِلْمِت»). Tanween didn't fix it; changing the second word did (كلمة بالإنجليزي). The owner chooses such wording changes.
+- A pronoun «له» standing alone can vanish or sound heavy: either set it off with commas when it carries meaning (اللي حصل، له اسم، وله حسبة) or glue it to the verb (قالتله، آيلالُه).
+- Hamza respellings that worked once are not universal: أبل (قبل) was heard as «Apple»; يِئْرا with tashkeel sounded foreign. Prefer plain spelling first (قبل، يقرا، بيئرا without tashkeel).
 - A word that is right in a short test can be read with the wrong subject inside a long segment (طلعت = she, read as I). Test it in the same preceding sentence, then regenerate the unapproved segment.
 
 **Generating**
