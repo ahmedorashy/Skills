@@ -65,6 +65,8 @@ Shadda on doubled verbs helps: يجرّب، يدوّر، اتدرّب، يزوّ
 7. Always send a **short clip of just the splice point** (about 1.5 s each side) for review, then the whole segment.
 8. After approval, rebuild the episode (see Assembly).
 
+**You cannot hear the audio.** Never guess a word's position from the energy profile alone when the segment isn't approved yet: either regenerate the unapproved segment with the fixed spelling, or ask the owner for the exact second. Never send a segment you know still has a wrong word.
+
 ### Splice method (ffmpeg + numpy)
 Work in WAV at 44.1 kHz mono s16.
 ```bash
