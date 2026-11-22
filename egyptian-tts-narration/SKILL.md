@@ -32,7 +32,7 @@ Report the credit cost of **every** generation, including tiny tests.
    - Is it a noun, an adjective (أفعل تفضيل) or a verb? «أرجح كلام» is an adjective (most likely), not the verb أرجّح.
    - For a verb: past, present or imperative? وقف imperative = وَأَّفْ, past = وِئِف; رجع past = رِجِع.
    - Transitive or not? يطلّع (brings out) vs يطلع (goes up).
-   - Which meaning? تقل = becomes less (تِئِلّ), not ثقل (heavy); نص = text (نَصّ) vs half (نُصّ); شبه = similar (شَبَه).
+   - Which meaning? تقل = becomes less (تِئِلّ), not ثقل (heavy); نص = text (نَصّ) vs half (نُصّ); شبه بعضه = like each other (شِبْه بعضه).
    Then choose the spelling (and diacritics only if needed) that forces that reading. If diacritics don't force it, change the form (add أل, split a suffix, add a space) and test. Never respell mechanically.
 6. **Tool and brand names in English letters** (ChatGPT, Claude, Gemini). Written in Arabic, ج is read as a Cairene g.
 7. If a pronoun suffix keeps coming out wrong, split it off: بتدخّل له.
@@ -49,7 +49,7 @@ Report the credit cost of **every** generation, including tiny tests.
 | Episode 5 approved | قبل→وقَبل ما يقرا · اتقسمت (was divided)→اِتْقَسَمِت · قطعتين→plain · وقف past after ف→ف وِئِف · اتقصت (cut)→اتْأَصِّت · بيقرا→بيئرا · قالت له→قالتله · قايلة له→آيلالُه · وترجمها (imperative) |
 | More approved spellings | لقط (past)→لَأَطْ · يبقى→يِبْأى · تعلى→تِعْلى · قصيرة→الأُصيّرة · طلعت (it turned out)→طِلْعِت, but when the subject is a feminine noun from the previous sentence («…حتة من الرد. طلعت زي أي كلمة») plain طلعت worked and طِلْعِت was read as «I came out» · طلع / فطلع (came out)→طِلِع / فطِلِع · بتسأله, الحقيقة→plain |
 | Keep ث | ثواني · واثق |
-| Context-sensitive | شبه بعضه→شَبَه بعضه (similar) · تقل→تِئِلّ (becomes less, not ثقل; say it in «كل ما تِئِلّ،») · نصه→نُصّو (its half) · نص (text)→نَصّ vs نُصّ (half) · النصية→النَّصّية · وقف (imperative)→وَأَّفْ, with و: ووَأَّفْ · وقف (past)→وِئِف · رجع (past)→رِجِع · ما حفظش→ما حَفَظْش · بتدخله→بتدخّل له · يطلّع (transitive) vs يطلع (goes up) · تتغسل→تِتْغِسِل · تغسل (quoted)→«تُغسل» · آخر (last, as in آخر محطة)→آخِر (plain was read as آخَر "another") · أرجح كلام (noun: most likely)→الأرجح / الكلام الأرجح (without أل it is read as a verb; tashkeel didn't fix it) |
+| Context-sensitive | شبه بعضه→شِبْه بعضه (like each other; approved ep3) · تقل→تِئِلّ (becomes less, not ثقل; say it in «كل ما تِئِلّ،») · نصه→نُصّو (its half) · نص (text)→نَصّ vs نُصّ (half) · النصية→النَّصّية · وقف (imperative)→وَأَّفْ, with و: ووَأَّفْ · وقف (past)→وِئِف · رجع (past)→رِجِع · ما حفظش→ما حَفَظْش · بتدخله→بتدخّل له · يطلّع (transitive) vs يطلع (goes up) · تتغسل→تِتْغِسِل · تغسل (quoted)→«تُغسل» · آخر (last, as in آخر محطة)→آخِر (plain was read as آخَر "another") · أرجح كلام (noun: most likely)→الأرجح / الكلام الأرجح (without أل it is read as a verb; tashkeel didn't fix it) |
 | English letters | ChatGPT · Claude · Gemini · Large Language Model · Next Token Prediction · Token · Temperature |
 
 Shadda on doubled letters helps (shadda is allowed; full tashkeel is not): يجرّب، يدوّر، اتدرّب، يزوّد، يكرّر، اتغيّر، كمّل، بيفرّق، يتوقّع، اتعلّمها، مرتّب، جوّاه، خلّي، يغيّر، يطلّعك، عليّا، يخمّن، يألّف، يلخّص، متدرّب، تتأكّد، يرنّ.
