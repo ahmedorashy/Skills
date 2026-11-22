@@ -39,7 +39,7 @@ Report the credit cost of **every** generation, including tiny tests.
 |---|---|
 | Qaf → hamza (colloquial) | قاعد→آعِد · فوق→فوء / فوؤ · بيقرا→بيِئْرا · بيقراه→بيِئْراه · قال→آل · قعد→أعد · قبله→أبله · يلقط→يِلْؤُطْ · بيلقط→بيِلْؤُطْ · طريقة→طريأة · يقرّب→يِأرّب |
 | Keep ق (Standard-Arabic origin) | اقتراح / يقترح / الاقتراحات · قاموس · قماش→قُماش · مقالات · ترقية / اترقّى · مقنع→مُقنِع · القطعة · توقّع · قرارات · ينقل→يِنقِل |
-| Write as is (model says it right) | أقولها · حقايق — respelling them (أؤولها، حآيِء) broke them. Try the plain spelling first for common colloquial words |
+| Write as is (model says it right) | أقولها · حقايق · ووافقه→و وافقه (separate the و with a space; joined it came out with a gap) — respelling them (أؤولها، حآيِء) broke them. Try the plain spelling first for common colloquial words |
 | Keep ث | ثواني · واثق |
 | Context-sensitive | شبه بعضه→شَبَه بعضه (similar) · تقل→تِئِلّ (becomes less, not ثقل; say it in «كل ما تِئِلّ،») · نصه→نُصّو (its half) · نص (text)→نَصّ vs نُصّ (half) · النصية→النَّصّية · وقف (imperative)→وَأَّفْ, with و: ووَأَّفْ · وقف (past)→وِئِف · رجع (past)→رِجِع · ما حفظش→ما حَفَظْش · بتدخله→بتدخّل له · يطلّع (transitive) vs يطلع (goes up) · تتغسل→تِتْغِسِل · تغسل (quoted)→«تُغسل» |
 | English letters | ChatGPT · Claude · Gemini · Large Language Model · Next Token Prediction · Token · Temperature |
